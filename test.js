@@ -7,4 +7,19 @@ const SteamApi = require('./index.js');
 //         console.log(data);
 //     }
 // });
-SteamApi.getPlayerInfo(765611980895449, adad);
+
+
+// SteamApi.getPlayerInfo('76561198089544929', '', (err, data) => {
+//     if(err) throw err;
+//     console.log(data);
+// });
+
+// SteamApi.getFriendList('76561198089544929', '', (err, data) => {
+//     if(err) throw err;
+//     console.log(data);
+// });
+
+SteamApi.getUserStats(730, '76561198089544929', '', (err, data) => {
+    if(err) throw err;
+    console.log(data);
+});
