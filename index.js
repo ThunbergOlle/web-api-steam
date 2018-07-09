@@ -5,3 +5,5 @@ module.exports.getGAchievements = require('./modules/getAchievementsPercentagesF
 module.exports.getPlayerInfo = require('./modules/getPlayerSummaries');
 module.exports.getFriendList = require('./modules/getFriendList');
 module.exports.getUserStats = require('./modules/getUserStatsForGame');
+module.exports.getRecentGames = require('./modules/getRecentlyPlayedGames');
+module.exports.getPlayerBans = require('./modules/getPlayerBans');

@@ -42,6 +42,15 @@ SteamApi.getGAchievements(appid, (err, data) => {})
     - err: If there are any errors here they will be!
     - data: The data recieveded
 
+```js
+SteamApi.getPlayerBans(steam64id, apikey, (err, data) => {})
+```   
+- steam64id: The steam64id of the user you want to check bans on.
+- apikey: The required apikey.
+- callback: Callback function
+    - err: If there are any errors here they will be!
+    - data: The data recieveded
+
 ---
 #### Examples in JS format
 This section will be added later. 
