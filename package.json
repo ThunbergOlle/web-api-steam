@@ -1,6 +1,6 @@
 {
   "name": "web-api-steam",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Everything you need when working with the web api for steam.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,33 @@
     "url": "git+https://github.com/ThunbergOlle/web-api-steam.git"
   },
   "keywords": [
-    "steam"
+    "steam",
+    "steam-api",
+    "steam api",
+    "api steam",
+    "get friend list steam",
+    "friends steam",
+    "global achievements steam npm",
+    "steam api module",
+    "playerbans steam",
+    "user stats steam module",
+    "steam-user-stats",
+    "node-steam",
+    "steam user games",
+    "steam player info",
+    "steam user profile",
+    "user-profile-steam",
+    "steam profile",
+    "steam bans",
+    "get friend list of player steam",
+    "getUserStats",
+    "steam module",
+    "steam-web-api",
+    "steam web api",
+    "steam client",
+    "steam api key",
+    "steam web module",
+    "module for steam web"
   ],
   "author": "OlleThunberg <olle.thunberg03@gmail.com>",
   "license": "MIT",

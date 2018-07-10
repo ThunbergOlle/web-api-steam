@@ -52,11 +52,68 @@ SteamApi.getPlayerBans(steam64id, apikey, (err, data) => {})
     - data: The data recieveded
 
 ---
-#### Examples in JS format
-This section will be added later. 
-### More info
-I'm really **happy** if you'd like to share this module or use this in your upcomming bot or script or whatever you are going to use this for. If you feel like there is anything missing then please open an issue on the [Github](https://github.com/ThunbergOlle/web-api-steam) page. I will fix it as soon as possible.
+### Examples in JS format
+Here you will be able to find examples.
+#### Get Player Bans
+```js
+SteamApi.getPlayerBans('76561198089544929', 'your_api_key', (err, data) => {
+    if(err) throw err;
+    console.log(data);
+})
 
+```
+**Output**
+```js
+{ SteamId: '76561198089544929',
+  CommunityBanned: false,
+  VACBanned: false,
+  NumberOfVACBans: 0,
+  DaysSinceLastBan: 0,
+  NumberOfGameBans: 0,
+  EconomyBan: 'none' }
+```
+---
+#### Get Friendlist of player
+```js
+SteamApi.getFriendList('76561198089544929', 'your_api_key', (err, data) => {
+    if(err) throw err;
+    console.log(data);
+});
+```
+**Output**
+```js
+[ { steamid: '76561197963343887',
+    relationship: 'friend',
+    friend_since: 1517122708 },
+  { steamid: '76561197969200720',
+    relationship: 'friend',
+    friend_since: 1457710832 },
+  { steamid: '76561197986015023',
+    relationship: 'friend'}
+    ]
+```
+---
+#### Get Friendlist of player
+```js
+SteamApi.getGAchievements('730', (err, data) => {
+    if(err) throw err;
+    console.log(data);
+});
+```
+**Output**
+```js
+[ { name: [ 'KILL_ENEMY_RELOADING' ],
+    percent: [ '78.5999984741210938' ] },
+  { name: [ 'GIVE_DAMAGE_LOW' ],
+    percent: [ '78.5999984741210938' ] },
+  { name: [ 'UNSTOPPABLE_FORCE' ], percent: [ '77.5' ] },
+  { name: [ 'KILL_ENEMY_LOW' ],
+    percent: [ '77.4000015258789063' ] },
+  { name: [ 'WIN_ROUNDS_LOW' ], percent: [ '77' ] }
+  }]
+```
+
+You should be able to get the basics now how it response, you can read more about this on the [wiki]() page.
 ## License
 MIT License
 
