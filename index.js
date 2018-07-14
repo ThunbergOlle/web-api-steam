@@ -7,3 +7,5 @@ module.exports.getFriendList = require('./modules/getFriendList');
 module.exports.getUserStats = require('./modules/getUserStatsForGame');
 module.exports.getRecentGames = require('./modules/getRecentlyPlayedGames');
 module.exports.getPlayerBans = require('./modules/getPlayerBans');
+module.exports.getSchema = require('./modules/getSchema');
+module.exports.getOwnedGames = require('./modules/getOwnedGames');

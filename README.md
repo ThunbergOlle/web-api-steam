@@ -22,7 +22,7 @@ SteamApi.getFriendList(steam64id, key, (err, data) => {})
 Better docs and readme file will be added soon!
 - callback: Callback function.
     - err: If there are any errors here they will be!
-    - data: The data recieved
+    - data: The data received
 
 ```js
 SteamApi.getPlayerInfo(steam64id, key, (err, data) => {})
@@ -32,7 +32,7 @@ SteamApi.getPlayerInfo(steam64id, key, (err, data) => {})
 Better docs and readme file will be added soon!
 - callback: Callback function.
     - err: If there are any errors here they will be!
-    - data: The data recieved
+    - data: The data received
 
 ```js
 SteamApi.getGAchievements(appid, (err, data) => {})
@@ -40,7 +40,7 @@ SteamApi.getGAchievements(appid, (err, data) => {})
 - appid: The appid you want to get the global achievements for
 - callback: Callback function
     - err: If there are any errors here they will be!
-    - data: The data recieveded
+    - data: The data received
 
 ```js
 SteamApi.getPlayerBans(steam64id, apikey, (err, data) => {})
@@ -49,8 +49,15 @@ SteamApi.getPlayerBans(steam64id, apikey, (err, data) => {})
 - apikey: The required apikey.
 - callback: Callback function
     - err: If there are any errors here they will be!
-    - data: The data recieveded
-
+    - data: The data received
+```js
+SteamApi.getOwnedGames(steam64id, apikey, (err, data) => {})
+```
+- steam64id: The steam64id of the user you want to check bans on.
+- apikey: The required apikey.
+- callback: Callback function
+    - err: If there are any errors here they will be!
+    - data: The data received
 ---
 ### Examples in JS format
 Here you will be able to find examples.

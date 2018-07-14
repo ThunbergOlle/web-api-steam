@@ -7,11 +7,18 @@ const SteamApi = require('./index.js');
 //         console.log(data);
 //     }
 // });
-SteamApi.getPlayerBans('76561198089544929', 'A860DD871BBD3D2410B89282E1B3A6E5', (err, data) => {
-    if(err) throw err;
-    console.log(data);
+// SteamApi.getPlayerBans('76561198089544929', 'A860DD871BBD3D2410B89282E1B3A6E5', (err, data) => {
+//     if(err) throw err;
+//     console.log(data);
+// })
+// SteamApi.getSchema('440', 'A860DD871BBD3D2410B89282E1B3A6E5', (err, data) => {
+//   if(err) throw err;
+//   console.log(data);
+// });
+SteamApi.getOwnedGames('76561198089544929','A860DD871BBD3D2410B89282E1B3A6E5', (err, data) => {
+  if(err) throw err;
+  console.log(data);
 })
-
 // SteamApi.getPlayerInfo('76561198089544929', 'A860DD871BBD3D2410B89282E1B3A6E5', (err, data) => {
 //     if(err) throw err;
 //     console.log(data);
