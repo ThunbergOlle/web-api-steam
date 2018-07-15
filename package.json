@@ -1,6 +1,6 @@
 {
   "name": "web-api-steam",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "description": "Everything you need when working with the web api for steam.",
   "main": "index.js",
   "scripts": {

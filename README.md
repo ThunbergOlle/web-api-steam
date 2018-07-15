@@ -6,7 +6,7 @@ Before you begin using this we recommend getting the [apikey](https://steamcommu
 
 **Install**
 ```js
-npm web-api-steam --save
+npm install web-api-steam --save
 ```
 **Import**
 ```js
