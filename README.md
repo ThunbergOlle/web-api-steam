@@ -50,6 +50,7 @@ SteamApi.getPlayerBans(steam64id, apikey, (err, data) => {})
 - callback: Callback function
     - err: If there are any errors here they will be!
     - data: The data received
+
 ```js
 SteamApi.getOwnedGames(steam64id, apikey, (err, data) => {})
 ```
@@ -58,7 +59,26 @@ SteamApi.getOwnedGames(steam64id, apikey, (err, data) => {})
 - callback: Callback function
     - err: If there are any errors here they will be!
     - data: The data received
----
+
+```js
+SteamApi.getSchema(appid, apikey, (err, data) => {})
+```
+- appid: The appid you want to check it for.
+- apikey: The required apikey.
+- callback: Callback function
+    - err: If there are any errors here they will be!
+    - data: The data received
+
+```js
+SteamApi.getUserStats(appid, steam64id, apikey, (err, data) => {})
+```
+- appid: The appid you want to check it for.
+- steam64id: The steam64id you want to check the user stats on.
+- apikey: The required apikey.
+- callback: Callback function
+    - err: If there are any errors here they will be!
+    - data: The data received
+
 ### Examples in JS format
 Here you will be able to find examples.
 #### Get Player Bans
@@ -100,7 +120,7 @@ SteamApi.getFriendList('76561198089544929', 'your_api_key', (err, data) => {
     ]
 ```
 ---
-#### Get Friendlist of player
+#### Get Global achievements stats for a game
 ```js
 SteamApi.getGAchievements('730', (err, data) => {
     if(err) throw err;
@@ -121,6 +141,23 @@ SteamApi.getGAchievements('730', (err, data) => {
 ```
 
 You should be able to get the basics now how it response, you can read more about this on the [wiki]() page.
+
+#### "How can I help?"
+Here's a list on what's done or not. Also shows the broken api's.
+
+| Api Name      | Status        | Update|
+| ------------- |:------      -:| -----:|
+| UserStats      | 90% |  0.0.1 |
+| Achievements      | 100% |  0.0.1 |
+| PlayerSummaries      | 100%      |   0.0.1 |
+| Friendlist | 100%      |    0.0.1 |
+| Playerbans | 95%      |    0.0.3 |
+| RecentGames | Broken      |    0.0.3 |
+| OwnedGames | 100%      |    0.0.5 |
+| GetSchema | 100%      |    0.0.5 |
+| InSharedGame | 0%      |    0.0.5 |
+
+
 ## License
 MIT License
 
