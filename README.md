@@ -142,21 +142,6 @@ SteamApi.getGAchievements('730', (err, data) => {
 
 You should be able to get the basics now how it response, you can read more about this on the [wiki]() page.
 
-#### "How can I help?"
-Here's a list on what's done or not. Also shows the broken api's.
-
-| Api Name      | Status        | Update|
-| ------------- |:------      -:| -----:|
-| UserStats      | 90% |  0.0.1 |
-| Achievements      | 100% |  0.0.1 |
-| PlayerSummaries      | 100%      |   0.0.1 |
-| Friendlist | 100%      |    0.0.1 |
-| Playerbans | 95%      |    0.0.3 |
-| RecentGames | Broken      |    0.0.3 |
-| OwnedGames | 100%      |    0.0.5 |
-| GetSchema | 100%      |    0.0.5 |
-| InSharedGame | 0%      |    0.0.5 |
-
 
 ## License
 MIT License
